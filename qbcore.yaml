@@ -132,7 +132,7 @@ tasks:
   - action: download_github
     dest: ./resources/[qb]/qb-core
     ref: main
-    src: https://github.com/qbcore-framework/qb-core
+    src: https://github.com/dufuspaelli/qb-core
 
   - action: download_github
     dest: ./resources/[qb]/qb-gangmenu
@@ -482,7 +482,27 @@ tasks:
     dest: ./resources/[qb]/qb-input
     ref: main
     src: https://github.com/qbcore-framework/qb-input
+  
+  # Set up upstreams
 
+    - action: write_file
+    file: ./resources/[qb]/qb-core/.git/config
+    data: |
+[core]
+  repositoryformatversion = 0
+  filemode = true
+  bare = false
+  logallrefupdates = true
+[remote "origin"]
+  url = git@github.com:dufuspaelli/qb-core.git
+  fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+  remote = origin
+  merge = refs/heads/main
+[remote "upstream"]
+  url = git://github.com/qbcore-framework/qb-core
+  fetch = +refs/heads/*:refs/remotes/upstream/*
+  
   # Clean up
   - action: remove_path
     path: ./tmp
