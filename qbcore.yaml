@@ -485,8 +485,8 @@ tasks:
   
   # Set up upstreams
 
-    - action: write_file
-    file: ./resources/[qb]/qb-core/.git/config
+  - action: write_file
+    file: ./resources/[qb]/qb-adminmenu/.git/config
     data: |
       [core]
         repositoryformatversion = 0
@@ -494,14 +494,1309 @@ tasks:
         bare = false
         logallrefupdates = true
       [remote "origin"]
-        url = git@github.com:dufuspaelli/qb-core.git
+        url = git@github.com:dufuspaelli/{qb-adminmenu}.git
         fetch = +refs/heads/*:refs/remotes/origin/*
       [branch "main"]
         remote = origin
         merge = refs/heads/main
       [remote "upstream"]
-        url = git://github.com/qbcore-framework/qb-core
+        url = git://github.com/qbcore-framework/qb-adminmenu.git
         fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-ambulancejob/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-ambulancejob}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-ambulancejob.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-anticheat/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-anticheat}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-anticheat.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-apartments/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-apartments}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-apartments.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-atms/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-atms}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-atms.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-banking/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-banking}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-banking.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-bankrobbery/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-bankrobbery}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-bankrobbery.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-blackjack/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-blackjack}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-blackjack.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-bossmenu/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-bossmenu}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-bossmenu.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-builderjob/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-builderjob}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-builderjob.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-busjob/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-busjob}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-busjob.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-casino/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-casino}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-casino.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-cityhall/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-cityhall}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-cityhall.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-clothing/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-clothing}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-clothing.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-commandbinding/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-commandbinding}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-commandbinding.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-core-main/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-core-main}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-core-main.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-crypto/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-crypto}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-crypto.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-customs/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-customs}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-customs.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-diving/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-diving}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-diving.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-doorlock/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-doorlock}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-doorlock.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-drugs/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-drugs}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-drugs.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-fitbit/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-fitbit}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-fitbit.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-gangmenu/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-gangmenu}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-gangmenu.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-garages/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-garages}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-garages.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-garbagejob/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-garbagejob}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-garbagejob.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-hotdogjob/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-hotdogjob}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-hotdogjob.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-houserobbery/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-houserobbery}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-houserobbery.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-houses/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-houses}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-houses.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-hud/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-hud}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-hud.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-ifruitstore/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-ifruitstore}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-ifruitstore.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-input/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-input}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-input.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-interior/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-interior}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-interior.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-inventory/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-inventory}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-inventory.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-jewelery/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-jewelery}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-jewelery.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-keyminigame/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-keyminigame}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-keyminigame.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-lapraces/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-lapraces}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-lapraces.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-lockpick/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-lockpick}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-lockpick.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-mechanicjob/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-mechanicjob}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-mechanicjob.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-menu/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-menu}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-menu.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-multicharacter/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-multicharacter}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-multicharacter.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-newsjob/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-newsjob}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-newsjob.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-pawnshop/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-pawnshop}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-pawnshop.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-phone/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-phone}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-phone.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-policejob/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-policejob}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-policejob.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-prison/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-prison}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-prison.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-radialmenu/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-radialmenu}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-radialmenu.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-recyclejob/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-recyclejob}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-recyclejob.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-scoreboard/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-scoreboard}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-scoreboard.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-scrapyard/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-scrapyard}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-scrapyard.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-shops/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-shops}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-shops.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-skillbar/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-skillbar}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-skillbar.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-smallresources/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-smallresources}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-smallresources.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-spawn/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-spawn}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-spawn.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-storerobbery/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-storerobbery}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-storerobbery.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-streetraces/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-streetraces}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-streetraces.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-taxijob/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-taxijob}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-taxijob.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-towjob/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-towjob}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-towjob.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-traphouse/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-traphouse}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-traphouse.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-truckerjob/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-truckerjob}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-truckerjob.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-truckrobbery/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-truckrobbery}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-truckrobbery.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-tunerchip/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-tunerchip}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-tunerchip.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-vehiclefailure/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-vehiclefailure}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-vehiclefailure.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-vehiclekeys/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-vehiclekeys}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-vehiclekeys.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-vehiclesales/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-vehiclesales}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-vehiclesales.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-vehicleshop/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-vehicleshop}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-vehicleshop.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-vineyard/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-vineyard}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-vineyard.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-weapons/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-weapons}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-weapons.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-weathersync/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-weathersync}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-weathersync.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+  - action: write_file
+    file: ./resources/[qb]/qb-weed/.git/config
+    data: |
+      [core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+      [remote "origin"]
+        url = git@github.com:dufuspaelli/{qb-weed}.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+      [branch "main"]
+        remote = origin
+        merge = refs/heads/main
+      [remote "upstream"]
+        url = git://github.com/qbcore-framework/qb-weed.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+      [init]
+        defaultBranch = main
+
   
   # Clean up
   - action: remove_path
